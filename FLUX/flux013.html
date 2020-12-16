@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(0,0,0,0);">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LogicUI by 8K</title>
+    <link rel="icon" type="image/png" sizes="1200x1200" href="../assets/img/8KTechLogo.png">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-sm fixed-top">
+            <div class="container-fluid"><a class="navbar-brand" href="../index.html" style="font-weight: 700;font-size: 25px;" target="_parent">LogicUI</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse d-sm-flex d-md-flex d-lg-flex d-xl-flex justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-end" id="navcol-1" style="font-size: 20px;font-weight: 400;">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="../index.html" style="padding-right: 20px;">FLUX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../logicmp.html">LogicMP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="col" style="width: 100%;text-align: center;margin-top: 63px;background: rgb(120,75,140);"><img src="../assets/img/FLUX%20Thumbnails/TPG%20FLUX.jpg" style="width: 100%;max-width: 600px;"></div>
+    <h1 class="text-center" style="padding-top: 70px;font-weight: 350;padding-left: 10px;padding-right: 10px;">FLUX #013 - TPG<br></h1>
+    <h5 class="text-center" style="padding-bottom: 20px;font-weight: 350;padding-left: 10px;padding-right: 10px;">16 December 2020</h5>
+    <div class="col" style="text-align: center;">
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">TPG is the 4th telco in Singapore and they just released their app not long ago. As a subscriber to their services, I naturally downloaded the app, but found it really frustrating to use. Checking the Google Play Store, I found out that I wasn't the only one. Hence, in this FLUX, let's see how we can address that.</p>
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Issue #1: Troublesome Login Process<br></h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">Every time you log in to the app, you have to key your TPG phone number, followed by an SMS authentication code. I get the authentication code, but why can't the app remember my phone number? As a secondary SIM just for data, I can barely remember my TPG number. Also, that's a lot of typing just to log in.</p><img src="../assets/img/FLUX013/flux013_login.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">To make things worse, if you accidentally press back after login in (on the main page), you will be logged out and have to log in all over again. Looks like someone did not implement this part properly.</p>
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Issue #2:&nbsp;Duplicate Menu<br></h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">There are 2 ways to navigate around the app: a bottom navigation bar and a hamburger menu. And the options you get are basically the same, with the hamburger menu having slightly more. What is the point of having 2 different menus if they more or less bring you to the same pages?<br></p><img src="../assets/img/FLUX013/flux013_menu.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">Having a hamburger menu on the very top left corner is really hard to reach too. The same goes for the notification toggle on the top right corner. Hence for my concept, I will stick to the bottom navigation bar.<br></p>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">Notice the option "Usage" in the hamburger menu? That can be accessed via the dashboard, but only if you click on the icons (and not the words). If I wasn't playing around with the app, I would not know it was even there.&nbsp;</p><img src="../assets/img/FLUX013/flux013_usage.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Issue #3: Wasted Pages<br></h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">There are a couple of pages that can be excluded to provide a better experience. For example, the support page only has links to 2 external sites. The profile page is really bare too, and all of these could actually come together to form a settings page. The legal and logout toggles could also be added to the settings page.<br></p><img src="../assets/img/FLUX013/flux013_wasted.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+    </div>
+    <h1 class="text-center" style="padding-top: 40px;font-weight: 350;padding-left: 10px;padding-right: 10px;">Concept by 8K</h1>
+    <div class="col" style="text-align: center;">
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Redesigned Login System</h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">The biggest frustration most users have with the app is logging in and that can actually be fixed easily, without compromising security. On the first login, the user can be greeted with the main login screen with phone number, but subsequent logins will only ask for the OTP. I also added an option to switch account here.</p><img src="../assets/img/FLUX013/flux013_login_concept.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">New Nav Menu &amp; Dashboard</h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">Simplifying the menu, we now only have one menu with 4 options: Dashboard, Billing, Notification and Settings.<br></p><img src="../assets/img/FLUX013/flux013_main_concept.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">Topping up your account is done directly on the dashboard, so the billing page now only contain a list of receipt. This would save the user an additional tap. I added progress bars to the stats for easier visualization and also a "Analyze Usage" toggle that would bring users to the more detailed usage page.</p>
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Usage Page</h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">To make the app feel more lite, I made the usage page (and all additional layers) a popup. I also shifted down the local/international toggle for greater reach-ability. The same was not done for the tabs as the user can simply swipe left/right on any part of the popup to switch between "data" and "talk &amp; text".</p><img src="../assets/img/FLUX013/flux013_usage_concept.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">For the data usage graph, I changed its orientation and size so scrolling is no longer required. Additionally, the new graph would only show usage for the current month, and not days from the previous months.&nbsp;</p>
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Billing &amp; Notification Page<br></h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">As mentioned earlier, the billing page has been simplified to only show the receipts. Tapping on the listing would bring up a popup showing the receipt. Previously, you would get 2 receipts every time, one under billing and another under notification, both with different information. The new receipt combines both.<br></p><img src="../assets/img/FLUX013/flux013_billing_concept.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">And in the new notification page, I removed all notifications for emailed receipts. Notice how I removed the timing for each listing? It really didn't make sense to me to simplify the date to number of days passed, yet keep a detail so specific like the time posted. We have a similar popup message when tapped.<br></p><img src="../assets/img/FLUX013/flux013_notification_concept.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+        <h3 style="padding-top: 40px;padding-bottom: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;">Settings Page<br></h3>
+        <p style="font-size: 20px;max-width: 1000px;margin-left: auto;margin-right: auto;text-align: left;">Everything else can be accessed via the settings page. These are miscellaneous stuff, things that users would not interact with often (hopefully). Since there are not a lot of such toggles, having them all on the same page would help the user to find them easier and at the same time make the app a lot simpler.<br></p><img src="../assets/img/FLUX013/flux013_settings_concept.jpg" style="width: 100%;margin-top: 20px;max-width: 800px;margin-bottom: 20px;border: solid;border-width: 1px;">
+    </div>
+    <div class="col" style="text-align: center;"><a class="btn btn-primary" role="button" style="background-color: rgb(0,0,0);margin: 20px;border-radius: 20px;padding-left: 20px;padding-right: 20px;padding-top: 10px;padding-bottom: 10px;" href="../index.html">Back to Home</a></div>
+    <div class="footer-basic">
+        <footer>
+            <p class="copyright">8K © 2017</p>
+        </footer>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
